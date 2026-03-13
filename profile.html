@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="profile-page">
+    <header>
+        <button id="back-btn">Volver al Inicio</button>
+        <h1>Perfil de Usuario</h1>
+        <button id="logout-btn">Cerrar Sesión</button>
+    </header>
+    <main class="profile-main">
+        <section class="profile-info">
+            <h2>Información del Perfil</h2>
+            <p>Usuario: <span id="user-name"></span></p>
+            <p>Correo: <span id="user-email"></span></p>
+        </section>
+        <section class="profile-customization">
+            <h2>Personalizar Perfil</h2>
+            <form class="profile-form">
+                <label for="new-username">Nuevo Usuario:</label>
+                <input type="text" id="new-username" placeholder="Ingresa nuevo usuario">
+                <label for="new-email">Nuevo Correo:</label>
+                <input type="email" id="new-email" placeholder="Ingresa nuevo correo">
+                <label for="new-password">Nueva Contraseña:</label>
+                <input type="password" id="new-password" placeholder="Ingresa nueva contraseña">
+                <label for="profile-pic">Foto de Perfil:</label>
+                <input type="file" id="profile-pic" accept="image/*">
+                <button type="submit">Actualizar Perfil</button>
+            </form>
+        </section>
+        <section class="create-post">
+            <h2>Crear Nueva Publicación</h2>
+            <form class="post-form">
+                <label for="post-title">Título:</label>
+                <input type="text" id="post-title" required>
+                <label for="post-image">Imagen:</label>
+                <input type="file" id="post-image" accept="image/*">
+                <label for="post-content">Contenido:</label>
+                <textarea id="post-content" rows="5" required></textarea>
+                <button type="submit">Publicar</button>
+            </form>
+        </section>
+    </main>
+    <script src="profile.js"></script>
+</body>
+</html>
